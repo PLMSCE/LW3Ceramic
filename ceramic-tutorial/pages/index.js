@@ -78,6 +78,7 @@ function Home() {
 function RecordSetter() {
   const [name, setName] = useState("");
   const record = useViewerRecord("basicProfile");
+
   console.log(record);
   const updateRecordName = async (name) => {
     await record.merge({
